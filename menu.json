@@ -1,0 +1,12 @@
+{
+    "admin/services/fence": {
+        "title": "Fence",
+        "action": {
+            "type": "view",
+            "path": "fence"
+        },
+        "depends": {
+            "acl": [ "luci-app-fence" ]
+        }
+    }
+}
