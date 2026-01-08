@@ -34,6 +34,7 @@ define Package/fence/install
 	$(INSTALL_CONF) ./root/etc/config/fence $(1)/etc/config/fence
 	$(INSTALL_DATA) ./htdocs/luci-static/resources/view/fence.js $(1)/www/luci-static/resources/view/fence.js
 	$(INSTALL_DATA) ./menu.json $(1)/usr/share/luci/menu.d/fence.json
+	$(INSTALL_DATA) ./root/usr/share/luci/menu.d/luci-app-fence.json $(1)/usr/share/luci/menu.d/luci-app-fence.json
 endef
 
 $(eval $(call BuildPackage,fence))
