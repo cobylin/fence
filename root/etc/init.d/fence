@@ -1,4 +1,4 @@
-#!/etc/init.d/rc.sh /etc/rc.common
+#!/bin/sh /etc/rc.common
 
 START=95
 USE_PROCD=1
