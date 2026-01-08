@@ -1,15 +1,12 @@
 config database
-	option name 'IPv4_Blacklist'
-	option family 'ipv4'
+	option name 'ChinaIp'
+	option url 'https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/lite/Country.mmdb'
 	option enabled '1'
-	option path '/etc/fence/ipv4.mmdb'
-	option ratio '1.0'
-	option queue '10'
+	option path '/etc/fence/chinaip.mmdb'
+	option ratio '0.5'
 
 config database
 	option name 'IPv6_Blacklist'
-	option family 'ipv6'
 	option enabled '1'
 	option path '/etc/fence/ipv6.mmdb'
 	option ratio '1.0'
-	option queue '20'
